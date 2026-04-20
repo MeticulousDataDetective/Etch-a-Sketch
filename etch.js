@@ -8,7 +8,6 @@ function makegrid(num){
 		componentdiv.style.flex = `0 0 calc(100%/${num})`;
 		componentdiv.addEventListener("pointerenter", (e) => {
 			if(e.buttons & 1){
-				e.currentTarget.style.color = "red";
 				e.currentTarget.style.backgroundColor = "red";
 				let opacity = Number(e.currentTarget.style.opacity) || 0;
 			if(opacity < 1){
